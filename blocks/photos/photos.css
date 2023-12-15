@@ -1,0 +1,110 @@
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 882px;
+    margin: 50px auto 0;
+    row-gap: 20px;
+  }
+  
+  .photos__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 282px;
+    height: 361px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .photos__trash-btn {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: none;
+    border: none;
+    padding: 0;
+    height: 19px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .photos__trash-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .photos__imgPopup-btn {
+    padding: 0;
+    width: 282px;
+    height: 290px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .photos__img {
+    width: 100%;
+    height: 290px;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .photos__title {
+    width: 195px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .photos__like-btn {
+    position: absolute;
+    right: 18px;
+    bottom: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 19px;
+    transition: opacity 0.3s ease-in-out;
+    outline: inherit;
+    color: inherit;
+  }
+  
+  .photos__like-btn:hover {
+    opacity: 0.8;
+  }
+  
+  .photos__like-btn_activated {
+    background-image: url(../../assets/img/icons/like-button-active.svg);
+  }
+  
+  @media screen and (max-width: 864px) {
+    .photos {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+      margin-top: 36px;
+    }
+  }
+  
+  @media screen and (max-width: 573px) {
+    .photos {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 36px;
+    }
+  
+    .photos__title {
+      margin-left: 0px;
+    }
+  }

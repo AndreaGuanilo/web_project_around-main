@@ -1,0 +1,16 @@
+.card__like-icon {
+  width: 1.3rem;
+  height: 1.2rem;
+  background-image: url(../../../../assets/img/icons/like-button.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+.card__like-icon:hover {
+  transform: scale(1.1);
+  background-image: url(../../../../assets/img/icons/like_hover.svg);
+}
+.card__like-icon_active {
+  background-image: url(../../../../assets/img/icons/like-button-active.svg);
+}

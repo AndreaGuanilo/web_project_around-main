@@ -1,0 +1,6 @@
+.card__like {
+  display: none;
+}
+.card__like:checked ~ .card__like-icon {
+  background-image: url(../../.././../assets/img/icons/like-button-active.svg);
+}

@@ -1,0 +1,90 @@
+.addimg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 5s ease-in-out;
+  }
+  
+  .addimg:hover {
+    cursor: pointer;
+  }
+  
+  .addimage_is-opened {
+    display: block;
+    z-index: 1;
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .addimg__popup {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 0;
+    width: 430px;
+    height: 330px;
+    z-index: 2;
+    background: #ffffff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+  
+  .addimg__btn {
+    width: 358px;
+    height: 50.15px;
+  
+    border: 0;
+    margin-top: 20.26px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+  
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    background-color: lightgray;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  
+    cursor: default;
+  }
+  
+  .addimg__btn_activa {
+    background-color: #000000;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 984px) {
+    .addimg {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .addimg__popup {
+      padding: 0;
+      width: 282px;
+      min-width: 282px;
+      min-height: 322px;
+    }
+  
+    .addimg__btn {
+      width: 238px;
+      min-width: 238px;
+      min-height: 46px;
+  
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }

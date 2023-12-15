@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alrededor de los EEUU</title>
+    <link rel="stylesheet" href="./pages/index.css">
+  </head>
+  <body class="body">
+    <div class="page">
+      <header class="header">
+        <img src="./assets/img/header__logo.svg" alt="logo de Around The US" class="logo">
+      </header>
+      <main>
+        <section class="profile">
+          <div class="profile__avatar">
+            <img src="./assets/img/profile__image.jpg" alt="Fotografia del perfil del usuario" class="profile__avatar-image">
+          </div>
+          <div class="profile__info">
+            <div class="profile__info-content">
+              <h2 class="profile__info-name">Jacques Cousteau</h2>
+              <button class="profile__editButton">
+                <img src="./assets/img/icons/edit-button.svg" alt="Botón para editar">
+              </button>
+            </div>
+            <h3 class="profile__info-about">Explorador</h3>
+          </div>
+          <button class="profile__addButton">
+            <img src="./assets/img/icons/add-button.svg" alt="Botón para añadir imágenes">
+          </button>
+        </section>
+        <section class="form edit-profile">
+          <div class="form__background"></div>
+          <div class="edit-profile__popup">
+            <h2 class="form__title">Editar perfil</h2>
+            <button class="form__close">
+              <img src="./assets/img/icons/close-button.svg" alt="Botón para cerrar" class="form__close-icon">
+            </button>
+            <form class="form__inputs edit-profile__inputs" name="userForm" novalidate>
+              <input class="form__input edit-profile__name" type="text" id="nameInput" name="username" placeholder="Nombre" minlength="2" maxlength="40" required>
+              <span class="empty-field"> Escribe un nombre válido. 2 caracteres como mínimo</span>
+              <input class="form__input edit-profile__about" type="text" id="aboutInput" name="about" placeholder="Algo de mi" minlength="2" maxlength="200" required>
+              <span class="empty-field"> Escribe algo sobre ti. 2 caracteres como mínimo.</span>
+              <button type="submit" class="form__submit edit-profile__btn" id="btnProfile">Guardar</button>
+            </form>
+          </div>
+        </section>
+        <div class="photos">
+          <template class="photos__template">
+            <div class="photos__content">
+              <button class="photos__trash-btn">
+                <img src="./assets/img/Trash.svg" alt="Botón para eliminar imágenes" class="photos__trash-icon">
+              </button>
+              <button class="photos__imgPopup-btn">
+                <img src=" " alt="Imagen elegida por el usuario" class="photos__img" />
+              </button>
+              <h2 class="photos__title"></h2>
+              <button class="photos__like-btn">
+                <img src="./assets/img/icons/like-button.svg" alt="Botón para darle like" class="photos__like-img">
+              </button>
+            </div>
+          </template>
+        </div>
+        <section class="form addimg">
+          <div class="form__background addimg__background"></div>
+          <div class="addimg__popup">
+            <h3 class="form__title">Nuevo Lugar</h3>
+            <button class="form__close addimg__close">
+              <img src="./assets/img/icons/close-button.svg" alt="Botón para cerrar" class="form__close-icon">
+            </button>
+            <form class="form__inputs addimg__inputs" name="userForm">
+              <input type="text" class="form__input addimg__title" id="titleInput" name="title" placeholder="Titulo" minlength="2" maxlength="30" required>
+              <span class="empty-field">Escribe un título válido. 2 caracteres como mínimo.</span>
+              <input type="url"  class="form__input addimg__url" id="urlInput" name="urlImagen" placeholder="Enlace a la imagen" required>
+              <span class="empty-field"> Coloca una URL válida de la imagen.</span>
+              <button type="submit" class="form__submit addimg__btn" disabled>Crear</button>
+            </form>
+          </div>
+        </section>
+        <section class="img-popup">
+          <div class="img-popup__background"></div>
+          <div class="img-popup__content" id="imagen">
+            <button class="img-popup__close closebtn">
+              <img src="./assets/img/icons/close-button.svg" alt="Botón para cerrar" class="img-popup__close-icon">
+            </button>
+            <img src=" " alt="Foto escogida por el usuario" class="img-popup__photo" />
+            <h2 class="img-popup__title"></h2>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">Copyright &copy; Andrea Guanilo 2023</p>
+      </footer>
+    </div>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/validate.js"></script>
+  </body>
+</html>

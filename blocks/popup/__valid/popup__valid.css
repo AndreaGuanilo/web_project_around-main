@@ -1,0 +1,11 @@
+.popup__valid_success {
+  display: block;
+  color: #f00;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin: 0;
+  padding-top: 0.31rem;
+  box-sizing: border-box;
+  border-top: 1px solid #f00;
+}

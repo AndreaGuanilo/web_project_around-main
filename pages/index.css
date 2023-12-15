@@ -1,0 +1,50 @@
+@import url(./normalize.css);
+/*HEADER*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+/*PROFILE*/
+@import url(../blocks/profile/profile.css);
+/*PHOTOS*/
+@import url(../blocks/photos/photos.css);
+/*POPUPS*/
+@import url(../blocks/popups/form/form.css);
+@import url(../blocks/popups/img-popup/imp-popup.css);
+@import url(../blocks/popups/edit/edit.css);
+@import url(../blocks/popups/new-img/new-img.css);
+/*FOOTER*/
+@import url(../blocks/footer/footer.css);
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-Regular.woff);
+  font-style: normal;
+  font-weight: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-Regular.woff);
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-Bold.woff2);
+  font-style: normal;
+  font-weight: bold;
+  font-weight: 900;
+}
+
+body {
+  background-color: #000000;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 445px) {
+  .page {
+    min-width: 320px;
+    margin: auto;
+  }
+}

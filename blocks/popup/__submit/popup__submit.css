@@ -1,0 +1,21 @@
+.popup__submit {
+  margin: 3rem 0 0;
+  width: 100%;
+  padding: 0.875rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0.125rem;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+.popup__submit:hover {
+  opacity: 0.8;
+}
+.popup__submit:disabled {
+  opacity: .8;
+  background-color: #fff;
+  border: 1px solid;
+  color: grey;
+}
